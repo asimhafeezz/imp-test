@@ -1,38 +1,90 @@
 .App {
-  text-align: center;
+	text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .posts {
+	/* create grid gallary or posts */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 15px;
+	list-style: none;
+	padding: 0;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	font-size: 14px;
+	margin: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .posts .post {
+	/* create post */
+	background: #f4f4f4;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.delete-button {
+	/* create delete button */
+	background: #ff0000;
+	color: #fff;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 3px;
+	cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.heading {
+	/* create heading */
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post-form {
+	/* create form */
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	font-size: 14px;
+	margin: 10px;
+}
+
+.post-form input,
+.post-form textarea {
+	/* create input */
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.post-form button {
+	/* create button */
+	background-color: #4caf50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.main-heading {
+	/* create main heading */
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	text-align: center;
+}
+
+small {
+	font-size: 12px;
 }
