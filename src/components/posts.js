@@ -47,7 +47,7 @@ export const Posts = () => {
 	return (
 		<>
 			<PostForm createPost={createPost} />
-			<section>
+			<>
 				<h3 className='heading'>
 					Posts{" "}
 					<span>
@@ -71,7 +71,7 @@ export const Posts = () => {
 						</article>
 					))}
 				</section>
-			</section>
+			</>
 		</>
 	)
 }
